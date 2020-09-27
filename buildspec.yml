@@ -11,8 +11,8 @@ phases:
       - yarn build
       - yarn test
 artifacts:
-files:
-    - '**/*'
-discard-paths: yes
-name: build-$(date +%Y-%m-%d)
-base-directory: 'build'
+    files:
+        - '**/*'
+    discard-paths: yes
+    name: build-$(date +%Y-%m-%d)
+    base-directory: 'build'
