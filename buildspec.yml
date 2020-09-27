@@ -5,8 +5,8 @@ env:
 phases:
   install:
     commands:
-      - npm install
+      - yarn
   build:
     commands:
-      - npm build
-      - npm test
+      - yarn build
+      - yarn test
