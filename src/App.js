@@ -1,10 +1,7 @@
 import React from 'react';
 import Checkbox from './components/Checkbox';
 
-export const add = (x, y) => {
-  return x + y;
-}
-
+export const add = (x, y) =>  x + y;
 
 function App() {
   return (
