@@ -8,7 +8,7 @@ phases:
       - yarn
   build:
     commands:
-      - yarn build & aws s3 sync ./build s3://testing-arcada-devops
+      - yarn build && aws s3 sync ./build s3://testing-arcada-devops
       - yarn test
 post_build:
     commands:
