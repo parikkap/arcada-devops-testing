@@ -13,7 +13,7 @@ phases:
 post_build:
     commands:
       - echo cp to s3...
-      - aws s3 sync build/* s3://testing-arcada-devops --delete --recursive
+      - aws s3 build/* s3://testing-arcada-devops
       - echo Build completed on `date`
 artifacts:
     files:
