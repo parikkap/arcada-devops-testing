@@ -8,13 +8,8 @@ phases:
       - yarn
   build:
     commands:
-      - yarn build && aws s3 sync ./build s3://testing-arcada-devops
       - yarn test
-post_build:
-    commands:
-      - echo cp to s3...
-      # - ./s3Copy.sh ./build s3://testing-arcada-devops
-      - echo Build completed on `date`
+      - yarn build && aws s3 sync ./build s3://testing-arcada-devops
 artifacts:
     files:
         - '**/*'
